@@ -1,0 +1,20 @@
+{
+	"Pioche" : {
+		"jusqua_pouvoir_jouer" : false
+	},
+	"Pile" : {
+		"nombre" : 3
+	},
+	"Main" : {
+		"visible" : false
+	}, 
+	"Poser" : {
+		"regleclassique" : false, 
+		"reglecumul2" : false,
+		"reglecumul4" : false, 
+		"reglecumul2et4" : false,
+		"reglecumulstop" : false,
+		"reglecumulchangementsens" : false
+	}
+
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendposition" value="996,445"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="Uno_MB">
+			<and name="pioche">
+				<feature name="une"/>
+				<feature name="pouvoirjouer"/>
+			</and>
+			<and name="pile">
+				<feature name="un"/>
+				<feature name="deux"/>
+				<feature name="trois"/>
+				<feature name="quatre"/>
+			</and>
+			<and name="main">
+				<feature name="nonvisible"/>
+				<feature name="visible"/>
+			</and>
+			<and name="actionposer">
+				<and name="regleclassique">
+					<feature name="regleuno"/>
+					<feature name="reglecontreuno"/>
+				</and>
+				<feature name="reglecumul2"/>
+				<feature name="reglecumul4"/>
+				<feature name="reglecumul2et4"/>
+				<feature name="reglecumulstop"/>
+				<feature name="reglecumulchangementsens"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>

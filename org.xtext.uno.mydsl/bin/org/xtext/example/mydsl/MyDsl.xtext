@@ -1,0 +1,15 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+
+Model:
+	greetings+=Uno*;
+	
+Uno:
+	'activeRegle(' Element ',' Regle',' Boolean')';
+
+Element: ("Pioche" | "Pile" | "Main" | "Poser") ;
+
+Regle: ("Une" | "Pouvoir_jouer" | "une_pioche" | "deux_pioche" | "trois_pioche" | "quatre_pioche" | "non_visible" | "visible" | "Règles_classiques" | "Règles_Cumul_Plus_Deux" | "Règles_Cumul_Plus_Quatre" | "Règles_Cumul_Plus_Deux_et_Plus_Quatre" | "Règles_Cumul_Stop" | "Règles_Cumul_Changement_de_sens") ;
+
+Boolean: ("true" | "false");

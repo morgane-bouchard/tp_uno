@@ -1,0 +1,210 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Pioche": {
+                "jusqua_pouvoir_jouer": true
+            },
+            "Pile": {
+                "nombre": 1
+            },
+            "Main": {
+                "visible": true
+            },
+            "Poser": {
+                "regleclassique": true,
+                "reglecumul2": true,
+                "reglecumul4": true,
+                "reglecumul2et4": true,
+                "reglecumulstop": true,
+                "reglecumulchangementsens": true
+            }
+        }
+    ],
+    "required": [
+        "Pioche",
+        "Pile",
+        "Main",
+        "Poser"
+    ],
+    "properties": {
+        "Pioche": {
+            "$id": "#/properties/Pioche",
+            "type": "object",
+            "title": "The Pioche schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "jusqua_pouvoir_jouer": true
+                }
+            ],
+            "required": [
+                "jusqua_pouvoir_jouer"
+            ],
+            "properties": {
+                "jusqua_pouvoir_jouer": {
+                    "$id": "#/properties/Pioche/properties/jusqua_pouvoir_jouer",
+                    "type": "boolean",
+                    "title": "The jusqua_pouvoir_jouer schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "Pile": {
+            "$id": "#/properties/Pile",
+            "type": "object",
+            "title": "The Pile schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "nombre": 1
+                }
+            ],
+            "required": [
+                "nombre"
+            ],
+            "properties": {
+                "nombre": {
+                    "$id": "#/properties/Pile/properties/nombre",
+                    "type": "integer",
+                    "title": "The nombre schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "Main": {
+            "$id": "#/properties/Main",
+            "type": "object",
+            "title": "The Main schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "visible": true
+                }
+            ],
+            "required": [
+                "visible"
+            ],
+            "properties": {
+                "visible": {
+                    "$id": "#/properties/Main/properties/visible",
+                    "type": "boolean",
+                    "title": "The visible schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "Poser": {
+            "$id": "#/properties/Poser",
+            "type": "object",
+            "title": "The Poser schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "regleclassique": true,
+                    "reglecumul2": true,
+                    "reglecumul4": true,
+                    "reglecumul2et4": true,
+                    "reglecumulstop": true,
+                    "reglecumulchangementsens": true
+                }
+            ],
+            "required": [
+                "regleclassique",
+                "reglecumul2",
+                "reglecumul4",
+                "reglecumul2et4",
+                "reglecumulstop",
+                "reglecumulchangementsens"
+            ],
+            "properties": {
+                "regleclassique": {
+                    "$id": "#/properties/Poser/properties/regleclassique",
+                    "type": "boolean",
+                    "title": "The regleclassique schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "reglecumul2": {
+                    "$id": "#/properties/Poser/properties/reglecumul2",
+                    "type": "boolean",
+                    "title": "The reglecumul2 schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "reglecumul4": {
+                    "$id": "#/properties/Poser/properties/reglecumul4",
+                    "type": "boolean",
+                    "title": "The reglecumul4 schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "reglecumul2et4": {
+                    "$id": "#/properties/Poser/properties/reglecumul2et4",
+                    "type": "boolean",
+                    "title": "The reglecumul2et4 schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "reglecumulstop": {
+                    "$id": "#/properties/Poser/properties/reglecumulstop",
+                    "type": "boolean",
+                    "title": "The reglecumulstop schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "reglecumulchangementsens": {
+                    "$id": "#/properties/Poser/properties/reglecumulchangementsens",
+                    "type": "boolean",
+                    "title": "The reglecumulchangementsens schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
