@@ -2,7 +2,7 @@
 
 Q1/
 
-En utilisant mon feature model, il y a 53 variantes des règles du Uno (7 booléens, plus un integer avec ) A CORRIGER
+En utilisant mon feature model, il y a 196 variantes des règles du Uno (7 booléens, plus un integer avec 4 possibilités, 7²x4 = 196 ).
 
 
 Q4/
